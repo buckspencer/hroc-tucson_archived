@@ -28,9 +28,9 @@ const faqs = [
   {
     id: 4,
     question:
-      "Is there a children\"s program during church services?",
+      "Is there a children's program during church services?",
     answer:
-      "Yes, we have a dedicated children\"s program for kids of all ages during our services. Your children are welcome to join!",
+      "Yes, we have a dedicated children's program for kids of all ages during our services. Your children are welcome to join!",
   },
   {
     id: 5,
@@ -42,9 +42,9 @@ const faqs = [
   {
     id: 6,
     question:
-      "How can I learn more about the church\"s beliefs and teachings?",
+      "How can I learn more about the church's beliefs and teachings?",
     answer:
-      "You can attend our newcomer\"s orientation sessions or reach out to our pastors and leaders to learn more about our beliefs and teachings.",
+      "You can attend our newcomer's orientation sessions or reach out to our pastors and leaders to learn more about our beliefs and teachings.",
   },
 ]
 
