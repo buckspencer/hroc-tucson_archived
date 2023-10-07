@@ -15,7 +15,7 @@ export function SlimLayout({ children }) {
           <Image
             className="absolute inset-0 h-full w-full object-cover"
             src={backgroundImage}
-            alt=""
+            alt="background"
             unoptimized
           />
         </div>
