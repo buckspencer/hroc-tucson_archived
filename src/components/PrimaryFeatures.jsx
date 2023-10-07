@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import Info from '@/components/Info'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
@@ -17,6 +18,7 @@ const features = [
     title: 'What we beleive',
     description:
       "God the Father is the fountainhead of the Holy Trinity. ",
+    fullText: "Liturgy is a term used to describe the shape or form of the Church's corporate worship of God. The word \"liturgy\" derives from a Greek word which means\"the common work.\" All the biblical references to worship in heaven involve liturgy. In the Old Testament, God ordered a liturgy, or specific pattern of worship. We find it described in detail in the Books of Exodus and Leviticus. In the New Testament we find the Church carrying over the worship of Old Testament Israel as expressed in both the synagogue and the temple, adjusting them in keeping with their fulfillment in Christ. The Orthodox Liturgy, which developed over many centuries, still maintains that ancient shape of worship. The main elements in the Liturgy include hymns, the reading and proclamation of the Gospel, prayers, and the Eucharist itself. For Orthodox Christians, the expressions \"the Liturgy\" or \"the Divine Liturgy\" refer to the eucharistic rite instituted by Christ Himself at the Last Supper.",
     image: screenshotExpenses,
   },
   {
@@ -143,14 +145,8 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
-                        className="w-full"
-                        src={feature.image}
-                        alt="background"
-                        priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                      />
+                    <div className="">
+                      <Info title={feature.title} description={feature.description} fullText={feature.fullText} image={feature.image} />
                     </div>
                   </Tab.Panel>
                 ))}

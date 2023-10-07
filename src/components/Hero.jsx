@@ -12,7 +12,7 @@ import MainBuilding from '@/images/holy-resurrection.jpeg'
 
 export function Hero() {
   return (
-    <Container className="pb-16 h-1/8 text-center relative border-4 border-red-800">
+    <Container className="pb-16 h-1/8 text-center relative border-8 border-red-800">
       <h3 className="mx-auto pt-12 font-display text-2xl font-small tracking-tight text-slate-900 text-center">
         Greetings in the Name of our Lord God and Savior Jesus Christ!
       </h3>
