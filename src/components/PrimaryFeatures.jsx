@@ -7,35 +7,41 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/screenshots/expenses.png'
+import screenshotExpenses from '@/images/church-background1.png'
 import screenshotPayroll from '@/images/screenshots/payroll.png'
 import screenshotReporting from '@/images/screenshots/reporting.png'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
-    title: 'Payroll',
+    title: 'What we beleive',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
-    image: screenshotPayroll,
-  },
-  {
-    title: 'Claim expenses',
-    description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      "God the Father is the fountainhead of the Holy Trinity. ",
     image: screenshotExpenses,
   },
   {
-    title: 'VAT handling',
+    title: 'Mysteries',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
-    image: screenshotVatReturns,
+      "The Sacraments of the Orthodox Church, like the Church Herself, can be said to possess a double character, for they are at the same time inward and outward, visible and invisible. ",
+    image: screenshotExpenses,
   },
   {
-    title: 'Reporting',
+    title: 'Holy Tradition',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
-    image: screenshotReporting,
+      "One of the distinctive characteristics of the Holy Orthodox Church is its changelessness, its loyalty to the past, its sense of living continuity with the ancient Church. ",
+    image: screenshotExpenses,
+  },
+  {
+    title: 'Feast Days',
+    description:
+      'On Saturday, the day after the crucifixion of the Lord, His disciples and followers were filled with gloom, for they had seen their Lord and Master die, crucified on a cross.',
+    image: screenshotExpenses,
+  },
+  {
+    title: 'Worship Services',
+    description:
+      'On Saturday, the day after the crucifixion of the Lord, His disciples and followers were filled with gloom, for they had seen their Lord and Master die, crucified on a cross.',
+    image: screenshotExpenses,
   },
 ]
 
@@ -60,8 +66,8 @@ export function PrimaryFeatures() {
   return (
     <section
       id="features"
-      aria-label="Features for running your books"
-      className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
+      aria-label="Various aspects of our faith"
+      className="relative overflow-hidden bg-[#E8DDB5] pb-28 pt-20 sm:py-32"
     >
       <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
@@ -73,12 +79,13 @@ export function PrimaryFeatures() {
       />
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+          <h2 className="font-display pt-20 text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
+            Holy Resurrection is a parish of the Antiochian Orthodox Christian Archdiocese of North America.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            Our congregation is comprised of people from many ethnic backgrounds all who share a Biblical love for, and commitment to, the Holy Trinity: Father, Son and Holy Spirit. “Antiochian” refers to the city of Antioch in the New Testament where the disciples of our Jesus Christ “were first called Christians” (Acts 11:26).
+
+            The Orthodox Christian Church confesses the faith delivered once for all to the saints.
           </p>
         </div>
         <Tab.Group

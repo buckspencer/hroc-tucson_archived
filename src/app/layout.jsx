@@ -1,4 +1,4 @@
-import { Inter, Lexend } from 'next/font/google'
+import { Inter, Lexend, Playfair_Display } from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
@@ -18,7 +18,7 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
-const lexend = Lexend({
+const lexend = Playfair_Display({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-lexend',
@@ -29,8 +29,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
-        inter.variable,
+        'h-full scroll-smooth bg-[#E8DDB5] antialiased',
         lexend.variable,
       )}
     >

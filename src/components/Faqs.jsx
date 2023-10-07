@@ -1,58 +1,37 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-faqs.jpg'
+import backgroundImage from '@/images/background-faqs.png'
 
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
-      answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+      question: 'What time are the church services?',
+      answer: 'Our Sunday services are held at 9:00 AM and 11:00 AM.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'Is there a dress code for attending church?',
+      answer: 'While there is no strict dress code, we recommend dressing modestly and respectfully when attending our services.',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
-      answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
-    },
-  ],
-  [
-    {
-      question: 'What was that testimonial about tax fraud all about?',
-      answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+      question: 'Do I need to make a reservation to attend a church service?',
+      answer: 'Reservations are not required, but they can help us better prepare for your visit. You can make a reservation on our website.',
     },
     {
-      question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
-      answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+      question: 'Is there a children\'s program during church services?',
+      answer: 'Yes, we have a dedicated children\'s program for kids of all ages during our services. Your children are welcome to join!',
     },
     {
-      question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
-      answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
-    },
-  ],
-  [
-    {
-      question: 'How do you generate reports?',
-      answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+      question: 'What COVID-19 safety measures are in place at the church?',
+      answer: 'We have implemented various safety measures, including mask requirements, social distancing, and hand sanitizing stations, to ensure the safety of our congregation.',
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question: 'Can I participate in community activities at the church?',
+      answer: 'Absolutely! We encourage you to get involved in our various community activities and groups. Check our website for more information.',
     },
     {
-      question: 'I lost my password, how do I get into my account?',
-      answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+      question: 'How can I learn more about the church\'s beliefs and teachings?',
+      answer: 'You can attend our newcomer\'s orientation sessions or reach out to our pastors and leaders to learn more about our beliefs and teachings.',
     },
   ],
 ]
@@ -68,8 +47,6 @@ export function Faqs() {
         className="absolute left-1/2 top-0 max-w-none -translate-y-1/4 translate-x-[-30%]"
         src={backgroundImage}
         alt=""
-        width={1558}
-        height={946}
         unoptimized
       />
       <Container className="relative">
@@ -81,8 +58,7 @@ export function Faqs() {
             Frequently asked questions
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
+            If you can’t find what you’re looking for, feel free to contact the office.
           </p>
         </div>
         <ul

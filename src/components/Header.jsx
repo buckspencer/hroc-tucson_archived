@@ -2,12 +2,13 @@
 
 import { Fragment } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
+import Logo from '@/images/logos/hroc-logo1.png'
 import { NavLink } from '@/components/NavLink'
 
 function MobileNavLink({ href, children }) {
@@ -79,9 +80,12 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-            <MobileNavLink href="#features">Features</MobileNavLink>
-            <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
-            <MobileNavLink href="#pricing">Pricing</MobileNavLink>
+            <MobileNavLink href="#features">Our Parish</MobileNavLink>
+            <MobileNavLink href="#testimonials">Visitors</MobileNavLink>
+            <MobileNavLink href="#pricing">Our Faith</MobileNavLink>
+            <MobileNavLink href="#pricing">Calendar</MobileNavLink>
+            <MobileNavLink href="#pricing">Contributions</MobileNavLink>
+
             <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href="/login">Sign in</MobileNavLink>
           </Popover.Panel>
@@ -93,30 +97,19 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10">
+    <header className="pt-6">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              <Image src={Logo} className="h-60 w-auto pb-8" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
-            </div>
-          </div>
-          <div className="flex items-center gap-x-5 md:gap-x-8">
-            <div className="hidden md:block">
-              <NavLink href="/login">Sign in</NavLink>
-            </div>
-            <Button href="/register" color="blue">
-              <span>
-                Get started <span className="hidden lg:inline">today</span>
-              </span>
-            </Button>
-            <div className="-mr-1 md:hidden">
-              <MobileNavigation />
+              <NavLink href="#features">Our Parish</NavLink>
+              <NavLink href="#testimonials">Visitors</NavLink>
+              <NavLink href="#pricing">Our Faith</NavLink>
+              <NavLink href="#pricing">Calendar</NavLink>
+              <NavLink href="#pricing">Contributions</NavLink>
             </div>
           </div>
         </nav>
