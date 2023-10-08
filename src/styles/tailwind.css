@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 12px;
+    /* Adjust the width as needed */
+    background-color: transparent;
+    /* Set the background color of the scrollbar track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #c3b78b;
+    /* Set the background color of the scrollbar thumb */
+    border-radius: 6px;
+    /* Adjust as needed for rounded corners */
+}

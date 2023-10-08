@@ -49,7 +49,7 @@ export function CallToAction() {
       id="calendar"
       className="relative overflow-hidden py-6"
     >
-      <div className="overflow-hidden bg-white py-24 sm:py-32">
+      <div className="overflow-hidden bg-[#E8DDB5] py-24 sm:py-32">
         <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-start">
             <div className="px-6 md:px-0 lg:pt-4">
@@ -76,7 +76,7 @@ export function CallToAction() {
                     </div>
                   ))}
                 </dl>
-                <dl className="mt-10 max-w-xl space-y-3 text-base leading-7 text-gray-600 lg:max-w-none">
+                <dl className="my-8 max-w-xl space-y-3 text-base leading-7 text-gray-600 lg:max-w-none">
                   Lives of Saints
                   {calendarData.stories.map((story, index) => (
                     <div key={index} className="relative">

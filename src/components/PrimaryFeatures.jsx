@@ -5,44 +5,10 @@ import Image from 'next/image'
 import Info from '@/components/Info'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
+import featuresData from '@/data/featuresData'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
-import screenshotExpenses from '@/images/church-background1.png'
-
-const features = [
-  {
-    title: 'What we beleive',
-    description:
-      "God the Father is the fountainhead of the Holy Trinity. ",
-    fullText: "Liturgy is a term used to describe the shape or form of the Church's corporate worship of God. The word \"liturgy\" derives from a Greek word which means\"the common work.\" All the biblical references to worship in heaven involve liturgy. In the Old Testament, God ordered a liturgy, or specific pattern of worship. We find it described in detail in the Books of Exodus and Leviticus. In the New Testament we find the Church carrying over the worship of Old Testament Israel as expressed in both the synagogue and the temple, adjusting them in keeping with their fulfillment in Christ. The Orthodox Liturgy, which developed over many centuries, still maintains that ancient shape of worship. The main elements in the Liturgy include hymns, the reading and proclamation of the Gospel, prayers, and the Eucharist itself. For Orthodox Christians, the expressions \"the Liturgy\" or \"the Divine Liturgy\" refer to the eucharistic rite instituted by Christ Himself at the Last Supper.",
-    image: screenshotExpenses,
-  },
-  {
-    title: 'Mysteries',
-    description:
-      "The Sacraments of the Orthodox Church, like the Church Herself, can be said to possess a double character, for they are at the same time inward and outward, visible and invisible. ",
-    image: screenshotExpenses,
-  },
-  {
-    title: 'Holy Tradition',
-    description:
-      "One of the distinctive characteristics of the Holy Orthodox Church is its changelessness, its loyalty to the past, its sense of living continuity with the ancient Church. ",
-    image: screenshotExpenses,
-  },
-  {
-    title: 'Feast Days',
-    description:
-      'On Saturday, the day after the crucifixion of the Lord, His disciples and followers were filled with gloom, for they had seen their Lord and Master die, crucified on a cross.',
-    image: screenshotExpenses,
-  },
-  {
-    title: 'Worship Services',
-    description:
-      'On Saturday, the day after the crucifixion of the Lord, His disciples and followers were filled with gloom, for they had seen their Lord and Master die, crucified on a cross.',
-    image: screenshotExpenses,
-  },
-]
 
 export function PrimaryFeatures() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
@@ -64,7 +30,7 @@ export function PrimaryFeatures() {
 
   return (
     <section
-      id="#ourFaith"
+      id="ourFaith"
       aria-label="Various aspects of our faith"
       className="relative overflow-hidden bg-[#E8DDB5] pb-28 pt-20 sm:py-32"
     >
@@ -72,8 +38,6 @@ export function PrimaryFeatures() {
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
         src={backgroundImage}
         alt="background"
-        width={2245}
-        height={1636}
         unoptimized
       />
       <Container className="relative">
@@ -96,7 +60,7 @@ export function PrimaryFeatures() {
             <>
               <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
                 <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
-                  {features.map((feature, featureIndex) => (
+                  {featuresData.map((feature, featureIndex) => (
                     <div
                       key={feature.title}
                       className={clsx(
@@ -134,10 +98,9 @@ export function PrimaryFeatures() {
                 </Tab.List>
               </div>
               <Tab.Panels className="lg:col-span-7">
-                {features.map((feature) => (
+                {featuresData.map((feature) => (
                   <Tab.Panel key={feature.title} unmount={false}>
                     <div className="relative sm:px-6 lg:hidden">
-                      <div className="absolute -inset-x-4 bottom-[-4.25rem] top-[-6.5rem] bg-white/10 ring-1 ring-inset ring-white/10 sm:inset-x-0 sm:rounded-t-xl" />
                       <p className="relative mx-auto max-w-2xl text-base text-white sm:text-center">
                         {feature.description}
                       </p>
