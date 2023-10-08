@@ -49,8 +49,8 @@ export function CallToAction() {
       id="calendar"
       className="relative overflow-hidden py-6"
     >
-      <div className="overflow-hidden bg-[#E8DDB5] py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl md:px-6 lg:px-8 border-8 border-red-800">
+      <div className="overflow-hidden bg-[#E8DDB5] lg:pl-20 w-11/12 mx-auto">
+        <div className="max-w-7xl md:px-6 lg:px-8 border-8 border-red-800">
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-start">
             <div className="px-6 md:px-0 lg:pt-4">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
