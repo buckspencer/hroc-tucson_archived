@@ -101,7 +101,7 @@ export function Header() {
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <Image src={Logo} className="h-60 w-auto pb-8" />
+              <Image src={Logo} alt="logo" className="h-60 w-auto pb-8" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Our Parish</NavLink>

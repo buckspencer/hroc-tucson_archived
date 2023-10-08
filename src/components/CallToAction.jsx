@@ -22,7 +22,7 @@ export function CallToAction() {
 
 
   useEffect(() => {
-    const apiUrl = 'https://orthocal.info/api/gregorian/';
+    const apiUrl = "https://orthocal.info/api/gregorian/";
 
     fetch(apiUrl)
       .then((response) => {
@@ -57,7 +57,7 @@ export function CallToAction() {
                 <h2 className="text-base font-semibold leading-7 text-red-600">{calendarData.titles}</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Daily Reading</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Today's Saints: {calendarData.summary_title}
+                  Today&apos;s Saints: {calendarData.summary_title}
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Fast: {calendarData.fast_level_desc}
