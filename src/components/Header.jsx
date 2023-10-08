@@ -6,7 +6,6 @@ import Image from 'next/image'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import Logo from '@/images/logos/hroc-logo1.png'
 import { NavLink } from '@/components/NavLink'
@@ -82,8 +81,8 @@ function MobileNavigation() {
           >
             <MobileNavLink href="#features">Our Parish</MobileNavLink>
             <MobileNavLink href="#testimonials">Visitors</MobileNavLink>
-            <MobileNavLink href="#pricing">Our Faith</MobileNavLink>
-            <MobileNavLink href="#pricing">Calendar</MobileNavLink>
+            <MobileNavLink href="#ourFaith">Our Faith</MobileNavLink>
+            <MobileNavLink href="#calendar">Calendar</MobileNavLink>
             <MobileNavLink href="#pricing">Contributions</MobileNavLink>
 
             <hr className="m-2 border-slate-300/40" />
@@ -107,8 +106,8 @@ export function Header() {
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Our Parish</NavLink>
               <NavLink href="#testimonials">Visitors</NavLink>
-              <NavLink href="#pricing">Our Faith</NavLink>
-              <NavLink href="#pricing">Calendar</NavLink>
+              <NavLink href="#ourFaith">Our Faith</NavLink>
+              <NavLink href="#calendar">Calendar</NavLink>
               <NavLink href="#pricing">Contributions</NavLink>
             </div>
           </div>

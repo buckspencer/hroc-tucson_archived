@@ -9,9 +9,6 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
 import screenshotExpenses from '@/images/church-background1.png'
-import screenshotPayroll from '@/images/screenshots/payroll.png'
-import screenshotReporting from '@/images/screenshots/reporting.png'
-import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
 const features = [
   {
@@ -67,7 +64,7 @@ export function PrimaryFeatures() {
 
   return (
     <section
-      id="features"
+      id="#ourFaith"
       aria-label="Various aspects of our faith"
       className="relative overflow-hidden bg-[#E8DDB5] pb-28 pt-20 sm:py-32"
     >
