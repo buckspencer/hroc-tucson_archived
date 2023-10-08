@@ -32,7 +32,7 @@ export function PrimaryFeatures() {
     <section
       id="ourFaith"
       aria-label="Various aspects of our faith"
-      className="relative overflow-hidden bg-[#E8DDB5] pb-28 pt-20 sm:py-32"
+      className="relative overflow-hidden bg-[#E8DDB5] pb-28 pt-20 sm:py-32 border-r-8 border-l-8 border-red-800"
     >
       <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
@@ -41,7 +41,7 @@ export function PrimaryFeatures() {
         unoptimized
       />
       <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
+        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none ">
           <h2 className="font-display pt-20 text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
             Holy Resurrection is a parish of the Antiochian Orthodox Christian Archdiocese of North America.
           </h2>

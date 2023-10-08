@@ -6,7 +6,7 @@ import { NavLink } from '@/components/NavLink'
 
 export function Footer() {
   return (
-    <footer className="bg-slate-50">
+    <footer className="bg-slate-50 border-r-8 border-l-8 border-b-8 border-red-800">
       <Container>
         <div className="py-16">
           <Image className="mx-auto h-60 w-auto" src={Logo} />
