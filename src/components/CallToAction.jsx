@@ -54,28 +54,14 @@ export function CallToAction() {
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:items-start">
             <div className="px-6 md:px-0 lg:pt-4">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
-                <h2 className="text-base font-semibold leading-7 text-red-600">{calendarData.titles}</h2>
+                <h2 className="text-base font-semibold leading-7 text-red-900">{calendarData.titles}</h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Daily Reading</p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Today&apos;s Saints: {calendarData.summary_title}
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Fast: {calendarData.fast_level_desc}
+                  Fast: <span class="text-red-900">{calendarData.fast_level_desc}</span>
                 </p>
-                <dl className="mt-10 max-w-xl space-y-3 text-base leading-7 text-gray-600 lg:max-w-none">
-
-                  {calendarData.readings.map((reading, index) => (
-                    <div key={index} className="relative">
-                      <dt
-                        className="inline font-semibold text-gray-900"
-                        onClick={() => handleReadingClick(index)} // Set the onClick handler
-                        style={{ cursor: 'pointer' }} // Add a pointer cursor to indicate it's clickable
-                      >
-                        {reading.display}
-                      </dt>{' '}
-                    </div>
-                  ))}
-                </dl>
                 <dl className="my-8 max-w-xl space-y-3 text-base leading-7 text-gray-600 lg:max-w-none">
                   Lives of Saints
                   {calendarData.stories.map((story, index) => (
@@ -84,16 +70,32 @@ export function CallToAction() {
                         onClick={() => handleSaintClick(index)} // Set the onClick handler
                         style={{ cursor: 'pointer' }} // Add a pointer cursor to indicate it's clickable
                       >
-                        {story.title}
+                        <a href='#reading-area'>{story.title}</a>
                       </dt>{' '}
                     </div>
                   ))}
                 </dl>
+                <dl className="mt-10 max-w-xl space-y-3 text-base leading-7 text-gray-600 lg:max-w-none">
+                  Today&apos;s Reading
+                  {calendarData.readings.map((reading, index) => (
+                    <div key={index} className="relative">
+                      <dt
+                        className="inline font-semibold text-gray-900"
+                        onClick={() => handleReadingClick(index)} // Set the onClick handler
+                        style={{ cursor: 'pointer' }} // Add a pointer cursor to indicate it's clickable
+                      >
+                        <a href='#reading-area'>{reading.display}</a>
+                      </dt>{' '}
+                    </div>
+                  ))}
+                </dl>
+
               </div>
             </div>
             <div className="sm:px-6 lg:px-0">
               <div className="relative isolate bg-white px-8 py-8 mx-auto sm:max-w-2xl sm:rounded-3xl sm:pt-16 lg:mx-0 lg:max-w-none">
                 <div
+                  id="reading-area"
                   className="absolute -inset-y-px -left-3 -z-10 w-full origin-bottom-left skew-x-[-30deg] bg-red-100 opacity-20 ring-1 ring-inset ring-white"
                   aria-hidden="true"
                 />
@@ -108,7 +110,7 @@ export function CallToAction() {
                   </div>
                 ) : (
                   <div className="text-base mx-auto leading-7 text-gray-700 lg:max-w-lg">
-                    <p className="text-base font-semibold leading-7 text-red-600">{calendarData.readings[currentReadingIndex]?.source}</p>
+                    <p className="text-base font-semibold leading-7 text-red-900">{calendarData.readings[currentReadingIndex]?.source}</p>
                     <h1 className="mt-2 m text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                       {calendarData.readings[currentReadingIndex]?.display}
                     </h1>

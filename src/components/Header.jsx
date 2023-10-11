@@ -103,7 +103,7 @@ export function Header() {
             <Link href="#" aria-label="Home">
               <Image src={Logo} alt="logo" className="h-60 w-auto pb-8" />
             </Link>
-            <div className="hidden md:flex md:gap-x-6">
+            <div className="hidden md:flex md:gap-x-6 align-middle">
               <NavLink href="#features">Our Parish</NavLink>
               <NavLink href="#testimonials">Visitors</NavLink>
               <NavLink href="#ourFaith">Our Faith</NavLink>
