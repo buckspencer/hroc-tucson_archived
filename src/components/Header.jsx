@@ -7,7 +7,7 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import Logo from '@/images/logos/hroc-logo1.png'
+import Logo from '@/images/logos/hroc-logo2.png'
 import { NavLink } from '@/components/NavLink'
 
 function MobileNavLink({ href, children }) {
@@ -96,10 +96,10 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="pt-6">
+    <header className="">
       <Container>
         <nav className="relative z-50 flex justify-between">
-          <div className="flex items-center md:gap-x-12">
+          < div className="flex items-center md:gap-x-12" >
             <Link href="#" aria-label="Home">
               <Image src={Logo} alt="logo" className="h-60 w-auto pb-8" />
             </Link>
@@ -110,7 +110,7 @@ export function Header() {
               <NavLink href="#calendar">Calendar</NavLink>
               <NavLink href="#pricing">Contributions</NavLink>
             </div>
-          </div>
+          </div >
           <div className="flex items-center gap-x-5 md:gap-x-8">
             {/* <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
@@ -124,8 +124,8 @@ export function Header() {
               <MobileNavigation />
             </div>
           </div>
-        </nav>
-      </Container>
-    </header>
+        </nav >
+      </Container >
+    </header >
   )
 }
