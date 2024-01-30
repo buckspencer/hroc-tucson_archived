@@ -1,5 +1,6 @@
 const formsPlugin = require('@tailwindcss/forms')
 const headlessuiPlugin = require('@headlessui/tailwindcss')
+const tailwindPatterns = require('tailwindcss-patterns')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -33,5 +34,5 @@ module.exports = {
       },
     },
   },
-  plugins: [formsPlugin, headlessuiPlugin],
+  plugins: [formsPlugin, headlessuiPlugin, tailwindPatterns],
 }

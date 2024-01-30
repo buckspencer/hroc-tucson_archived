@@ -29,11 +29,11 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-[#E8DDB5] antialiased',
+        'h-full scroll-smooth bg-white antialiased',
         lexend.variable,
       )}
     >
-      <body className="flex h-full flex-col">{children}</body>
+      <body className="flex h-full flex-col pattern-plus-connected-amber-100/60 pattern-plus-connected-scale-[0.5]">{children}</body>
     </html>
   )
 }
