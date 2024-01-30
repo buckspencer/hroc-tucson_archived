@@ -1,16 +1,16 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
-import Logo from '@/images/logos/hroc-logo1.png'
+import Logo from '@/images/logos/hroc-logo2.png'
 import { NavLink } from '@/components/NavLink'
 
 export function Footer() {
   return (
-    <footer className="bg-slate-50 border-r-8 border-l-8 border-b-8 border-red-800">
+    <footer className="">
       <Container>
-        <div className="py-16">
-          <Image className="mx-auto h-60 w-auto" src={Logo} />
-          <nav className="mt-10 text-sm" aria-label="quick links">
+        <div className="hidden md:py-16 md:block">
+          <Image className="mx-auto h-20 w-auto" alt='HROC Logo' src={Logo} />
+          <nav className="md:mt-10 text-sm" aria-label="quick links">
             <div className="-my-1 flex justify-center gap-x-6">
               <NavLink href="#features">Visitors</NavLink>
               <NavLink href="#testimonials">Calendar</NavLink>
@@ -18,7 +18,7 @@ export function Footer() {
             </div>
           </nav>
         </div>
-        <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
+        <div className="flex flex-col items-center py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
             <Link
               href="https://m.facebook.com/profile.php?id=100068291109663&_rdr"
