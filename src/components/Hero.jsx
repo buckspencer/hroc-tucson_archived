@@ -17,7 +17,8 @@ export function Hero() {
       aria-label="Various aspects of our faith"
       className="relative"
     >
-      <Image className="mx-auto rounded" src={MainBuilding} />
+      <div><Image className="mx-auto" src={MainBuilding} /></div>
+
 
     </section >
 
