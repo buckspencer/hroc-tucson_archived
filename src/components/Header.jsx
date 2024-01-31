@@ -7,7 +7,7 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import Logo from '@/images/logos/hroc-logo2.png'
+import Logo from '@/images/logos/hroc-logo3.png'
 import { NavLink } from '@/components/NavLink'
 
 function MobileNavLink({ href, children }) {

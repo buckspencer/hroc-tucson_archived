@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from '@/components/Container'
-import Logo from '@/images/logos/hroc-logo2.png'
+import Logo from '@/images/logos/hroc-logo3.png'
 import { NavLink } from '@/components/NavLink'
 
 export function Footer() {
